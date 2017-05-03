@@ -9,61 +9,51 @@ namespace JarvisTest
 {
     class Geometry
     {
-        LinkedList<Point> points;
-        LinkedList<Point> mch;
-        public Geometry(LinkedList<Point> _points)
+        public LinkedList<Mypoint> points;
+        public LinkedList<Mypoint> mch;
+        public struct Mypoint
         {
-            points = new LinkedList<Point>(_points);
-            LinkedListNode<Point> current = points.First;
+            public double X;
+            public double Y;
         }
-        public LinkedListNode<Point> CallcMin()
+        public Geometry(LinkedList<Mypoint> _points)
         {
-            LinkedListNode<Point> current = points.First;
-            LinkedListNode<Point> min = current;
+            points = new LinkedList<Mypoint>(_points);
+            LinkedListNode<Mypoint> current = points.First;
+        }
+        public LinkedListNode<Mypoint> CallcMin()
+        {
+            LinkedListNode<Mypoint> current = points.First;
+            LinkedListNode<Mypoint> min = current;
             current = current.Next;
             while (current != null)
             {
-                if (current.Value.Y > min.Value.Y)
+                if (current.Value.Y < min.Value.Y)
                 {
                     min = current;
                 }
-                current = current.Next;
-            }
-            current = points.First;
-            while (current != null)
-            {
-                bool fl = false;
-                if ((current.Value.Y == min.Value.Y) && (current.Value != min.Value))
-                {
-                    if (!fl)
-                    {
-                        fl = true;
-                    }
-                }
-                if ((fl) && (current.Value.Y == min.Value.Y) && (current.Value != min.Value))
+                else if (current.Value.Y == min.Value.Y)
                 {
                     if (current.Value.X < min.Value.X)
-                    {
                         min = current;
-                    }
                 }
                 current = current.Next;
             }
-            mch = new LinkedList<Point>();
+            mch = new LinkedList<Mypoint>();
             mch.AddFirst(min.Value);
             return min;
         }//Анимированный поиск минимумма
-        public float CallR(Point main, Point pret, Point cur)
+        public double CallR(Mypoint main, Mypoint pret, Mypoint cur)
         {
-            float res = 0;
+            double res = 0;
             double a1 = main.X - cur.X;
             double a2 = main.Y - cur.Y;
             double b1 = pret.X - cur.X;
             double b2 = pret.Y - cur.Y;
-            res = (float)((a2 * b1) - (b2 * a1));
+            res = (a2 * b1) - (b2 * a1);
             return res;
         }//Сравнение углов через ореинтированную площадь треугольника
-        public double CallcRad(Point main, Point frs)
+        public double CallcRad(Mypoint main, Mypoint frs)
         {
             double frsr = Math.Sqrt(Math.Pow((main.X - frs.X), 2) + Math.Pow((main.Y - frs.Y), 2));
             return frsr;
@@ -72,12 +62,12 @@ namespace JarvisTest
         {
             points.Remove(mch.First.Value);
             points.AddLast(mch.First.Value);
-            LinkedListNode<Point> copy;
-            while ((mch.Last.Value != mch.First.Value) || (mch.Count < 2))
+            LinkedListNode<Mypoint> copy;
+            while ((mch.Last.Value.X != mch.First.Value.X)&&(mch.Last.Value.Y != mch.First.Value.Y) || (mch.Count < 3))
             {
-                LinkedListNode<Point> main = mch.Last;
-                LinkedListNode<Point> pret = points.First;
-                LinkedListNode<Point> curent = pret.Next;
+                LinkedListNode<Mypoint> main = mch.Last;
+                LinkedListNode<Mypoint> pret = points.First;
+                LinkedListNode<Mypoint> curent = pret.Next;
                 while (curent != null)
                 {
                     if (CallR(main.Value, pret.Value, curent.Value) == 0)
@@ -89,7 +79,7 @@ namespace JarvisTest
                             pret = copy;
                         }
                     }
-                    if (CallR(main.Value, pret.Value, curent.Value) < 0)
+                    else if (CallR(main.Value, pret.Value, curent.Value) > 0)
                     {
                         copy = curent;
                         curent = pret;
@@ -104,30 +94,49 @@ namespace JarvisTest
         public void AddRectanglePoint(int n)
         {
             Random rnd = new Random();
-            Point res = new Point();
+            Mypoint res = new Mypoint();
             for (int i = 0; i < n; i++)
             {
-                int x = rnd.Next(-100, 100);
-                int y = rnd.Next(-100, 100);
-                res = new Point(x, y);
+                double x = rnd.NextDouble() * 200-100;
+                double y = rnd.NextDouble() * 200-100;
+                res = new Mypoint();
+                res.X = x;
+                res.Y = y;
+                points.AddLast(res);
+            }
+        }
+        public void AddtrangleTest(int n)
+        {
+            Random rnd = new Random();
+            Mypoint res = new Mypoint();
+            points.AddLast(res);
+            for (int i = 0; i < n; i++)
+            {
+                double x = rnd.NextDouble()*200-100;
+                double y = rnd.NextDouble() * 200-100;
+                res = new Mypoint();
+                res.X = x;
+                res.Y = y;
                 points.AddLast(res);
             }
         }
         public void AddElipse(int n)
         {
             Random rnd = new Random();
-            Point res = new Point();
+            Mypoint res = new Mypoint();
             for (int i = 0; i < n; i++)
             {
-                double arc = rnd.Next(0,359);
+                double arc = rnd.NextDouble() * 360;
                 arc = arc *Math.PI/180;
                 double x = 100 * Math.Cos(arc);
                 double y = 100 * Math.Sin(arc);
-                res = new Point((int)x, (int)y);
+                res = new Mypoint();
+                res.X = x;
+                res.Y = y;
                 points.AddLast(res);
             }
         }
-        private bool CirculTest(int x,int y)
+        private bool CirculTest(double x,double y)
         {
             double res = Math.Pow(x, 2) + Math.Pow(y, 2);
             if (res <= 10000)
@@ -138,19 +147,21 @@ namespace JarvisTest
         public void AddCirculPoint(int n)
         {
             Random rnd = new Random();
-            Point res = new Point();
+            Mypoint res = new Mypoint();
             bool flag = true;
-            int x;
-            int y;
+            double x;
+            double y;
             for (int i = 0; i < n; i++)
             {
                 do
                 {
-                    x = rnd.Next(-100, 100);
-                    y = rnd.Next(-100, 100);
+                    x = rnd.NextDouble() * 200 - 100;
+                    y = rnd.NextDouble() * 200 - 100;
                     flag = CirculTest(x, y);
                 } while (flag);
-                res = new Point(x, y);
+                res = new Mypoint();
+                res.X = x;
+                res.Y = y;
                 points.AddLast(res);
             }
         }
@@ -160,8 +171,8 @@ namespace JarvisTest
             string[] lines = new string[k];
             string x = "";
             string y = "";
-            Point pr = new Point();
-            LinkedListNode<Point> res = points.First;
+            Mypoint pr = new Mypoint();
+            LinkedListNode<Mypoint> res = points.First;
             for(int i=0;i<k;i++)
             {
                 x = res.Value.X.ToString();
@@ -169,11 +180,11 @@ namespace JarvisTest
                 lines[i] = x +"  "+ y;
                 res = res.Next;
             }
-            System.IO.File.WriteAllLines(@"C:\Users\Евгений\Desktop\Игры\JarvisAlgorithm\input.txt", lines);
+            System.IO.File.WriteAllLines(@"D:\Компьютерная графика\OpenGl\Программа\JarvisTest\input.txt", lines);
         }
         public void Clear()
         {
-            points = new LinkedList<Point>();
+            points = new LinkedList<Mypoint>();
         }
         public void SaveRes()
         {
@@ -181,8 +192,8 @@ namespace JarvisTest
             string[] lines = new string[k];
             string x = "";
             string y = "";
-            Point pr = new Point();
-            LinkedListNode<Point> res = mch.First;
+            Mypoint pr = new Mypoint();
+            LinkedListNode<Mypoint> res = mch.First;
             for (int i = 0; i < k; i++)
             {
                 x = res.Value.X.ToString();
@@ -190,7 +201,7 @@ namespace JarvisTest
                 lines[i] = x + "  " + y;
                 res = res.Next;
             }
-            System.IO.File.WriteAllLines(@"C:\Users\Евгений\Desktop\Игры\JarvisAlgorithm\MCH.txt", lines);
+            System.IO.File.WriteAllLines(@"D:\Компьютерная графика\OpenGl\Программа\JarvisTest\MCH.txt", lines);
         }
     }
 }

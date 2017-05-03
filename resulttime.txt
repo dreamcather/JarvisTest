@@ -1,402 +1,402 @@
-10000  80   Rectangle
-10000  83   Circul
-10000  242   Elipse
-
-20000  153   Rectangle
-20000  116   Circul
-20000  362   Elipse
-
-30000  153   Rectangle
-30000  171   Circul
-30000  535   Elipse
-
-40000  189   Rectangle
-40000  225   Circul
-40000  736   Elipse
-
-50000  218   Rectangle
-50000  284   Circul
-50000  884   Elipse
-
-60000  289   Rectangle
-60000  325   Circul
-60000  1076   Elipse
-
-70000  330   Rectangle
-70000  399   Circul
-70000  1269   Elipse
-
-80000  359   Rectangle
-80000  446   Circul
-80000  1536   Elipse
-
-90000  425   Rectangle
-90000  523   Circul
-90000  1655   Elipse
-
-100000  551   Rectangle
-100000  548   Circul
-100000  1836   Elipse
-
-110000  496   Rectangle
-110000  619   Circul
-110000  2024   Elipse
-
-120000  555   Rectangle
-120000  664   Circul
-120000  2182   Elipse
-
-130000  607   Rectangle
-130000  754   Circul
-130000  2380   Elipse
-
-140000  657   Rectangle
-140000  813   Circul
-140000  2550   Elipse
-
-150000  711   Rectangle
-150000  871   Circul
-150000  2797   Elipse
-
-160000  755   Rectangle
-160000  971   Circul
-160000  2948   Elipse
-
-170000  779   Rectangle
-170000  969   Circul
-170000  3150   Elipse
-
-180000  850   Rectangle
-180000  1036   Circul
-180000  3379   Elipse
-
-190000  866   Rectangle
-190000  1081   Circul
-190000  3535   Elipse
-
-200000  902   Rectangle
-200000  1143   Circul
-200000  3698   Elipse
-
-210000  990   Rectangle
-210000  1186   Circul
-210000  3799   Elipse
-
-220000  1054   Rectangle
-220000  1224   Circul
-220000  3999   Elipse
-
-230000  1023   Rectangle
-230000  1287   Circul
-230000  4211   Elipse
-
-240000  1094   Rectangle
-240000  1339   Circul
-240000  4398   Elipse
-
-250000  1112   Rectangle
-250000  1382   Circul
-250000  4501   Elipse
-
-260000  1173   Rectangle
-260000  1461   Circul
-260000  5026   Elipse
-
-270000  1190   Rectangle
-270000  1532   Circul
-270000  4949   Elipse
-
-280000  1432   Rectangle
-280000  1701   Circul
-280000  5264   Elipse
-
-290000  1387   Rectangle
-290000  1660   Circul
-290000  5375   Elipse
-
-300000  1362   Rectangle
-300000  1707   Circul
-300000  5659   Elipse
-
-310000  1448   Rectangle
-310000  1759   Circul
-310000  5750   Elipse
-
-320000  1649   Rectangle
-320000  1816   Circul
-320000  6027   Elipse
-
-330000  1641   Rectangle
-330000  1914   Circul
-330000  6050   Elipse
-
-340000  1586   Rectangle
-340000  1911   Circul
-340000  6293   Elipse
-
-350000  1572   Rectangle
-350000  1990   Circul
-350000  6399   Elipse
-
-360000  1680   Rectangle
-360000  2017   Circul
-360000  6482   Elipse
-
-370000  1806   Rectangle
-370000  2073   Circul
-370000  6776   Elipse
-
-380000  1781   Rectangle
-380000  3512   Circul
-380000  7508   Elipse
-
-390000  1767   Rectangle
-390000  2322   Circul
-390000  7111   Elipse
-
-400000  1854   Rectangle
-400000  2279   Circul
-400000  7890   Elipse
-
-410000  2065   Rectangle
-410000  2337   Circul
-410000  7528   Elipse
-
-420000  2095   Rectangle
-420000  2391   Circul
-420000  7746   Elipse
-
-430000  2036   Rectangle
-430000  2621   Circul
-430000  8419   Elipse
-
-440000  2378   Rectangle
-440000  2556   Circul
-440000  8261   Elipse
-
-450000  2141   Rectangle
-450000  2644   Circul
-450000  8455   Elipse
-
-460000  2162   Rectangle
-460000  2631   Circul
-460000  8667   Elipse
-
-470000  2259   Rectangle
-470000  2715   Circul
-470000  9500   Elipse
-
-480000  2250   Rectangle
-480000  2785   Circul
-480000  9020   Elipse
-
-490000  2304   Rectangle
-490000  2851   Circul
-490000  9168   Elipse
-
-500000  2519   Rectangle
-500000  2958   Circul
-500000  9446   Elipse
-
-510000  2888   Rectangle
-510000  2935   Circul
-510000  9343   Elipse
-
-520000  2371   Rectangle
-520000  2908   Circul
-520000  10637   Elipse
-
-530000  4223   Rectangle
-530000  3001   Circul
-530000  10051   Elipse
-
-540000  3177   Rectangle
-540000  3166   Circul
-540000  10118   Elipse
-
-550000  2577   Rectangle
-550000  3206   Circul
-550000  10356   Elipse
-
-560000  2669   Rectangle
-560000  3264   Circul
-560000  10544   Elipse
-
-570000  2752   Rectangle
-570000  3266   Circul
-570000  10705   Elipse
-
-580000  2768   Rectangle
-580000  3423   Circul
-580000  11905   Elipse
-
-590000  3311   Rectangle
-590000  3437   Circul
-590000  13086   Elipse
-
-600000  2789   Rectangle
-600000  3345   Circul
-600000  10895   Elipse
-
-610000  2821   Rectangle
-610000  3407   Circul
-610000  11078   Elipse
-
-620000  2825   Rectangle
-620000  3479   Circul
-620000  11280   Elipse
-
-630000  2903   Rectangle
-630000  3529   Circul
-630000  11517   Elipse
-
-640000  2933   Rectangle
-640000  3620   Circul
-640000  11694   Elipse
-
-650000  3019   Rectangle
-650000  3719   Circul
-650000  12024   Elipse
-
-660000  3024   Rectangle
-660000  4051   Circul
-660000  14482   Elipse
-
-670000  3676   Rectangle
-670000  4223   Circul
-670000  14932   Elipse
-
-680000  3255   Rectangle
-680000  6105   Circul
-680000  18733   Elipse
-
-690000  4642   Rectangle
-690000  5433   Circul
-690000  17592   Elipse
-
-700000  4504   Rectangle
-700000  5330   Circul
-700000  17768   Elipse
-
-710000  4412   Rectangle
-710000  1677   Circul
-710000  5158   Elipse
-
-720000  1292   Rectangle
-720000  5755   Circul
-720000  18259   Elipse
-
-730000  4382   Rectangle
-730000  5589   Circul
-730000  18066   Elipse
-
-740000  4564   Rectangle
-740000  5882   Circul
-740000  19578   Elipse
-
-750000  6765   Rectangle
-750000  1851   Circul
-750000  17636   Elipse
-
-760000  4934   Rectangle
-760000  5855   Circul
-760000  19969   Elipse
-
-770000  5494   Rectangle
-770000  6385   Circul
-770000  18999   Elipse
-
-780000  4978   Rectangle
-780000  5945   Circul
-780000  19409   Elipse
-
-790000  5304   Rectangle
-790000  6139   Circul
-790000  20381   Elipse
-
-800000  4992   Rectangle
-800000  6459   Circul
-800000  19662   Elipse
-
-810000  5138   Rectangle
-810000  6293   Circul
-810000  21372   Elipse
-
-820000  5508   Rectangle
-820000  5947   Circul
-820000  20464   Elipse
-
-830000  5203   Rectangle
-830000  6093   Circul
-830000  20762   Elipse
-
-840000  5096   Rectangle
-840000  6520   Circul
-840000  21013   Elipse
-
-850000  5465   Rectangle
-850000  6502   Circul
-850000  21104   Elipse
-
-860000  5115   Rectangle
-860000  7175   Circul
-860000  21971   Elipse
-
-870000  5329   Rectangle
-870000  7288   Circul
-870000  21155   Elipse
-
-880000  5209   Rectangle
-880000  4807   Circul
-880000  15487   Elipse
-
-890000  3946   Rectangle
-890000  4830   Circul
-890000  15612   Elipse
-
-900000  3938   Rectangle
-900000  4999   Circul
-900000  15760   Elipse
-
-910000  4039   Rectangle
-910000  4961   Circul
-910000  15989   Elipse
-
-920000  4059   Rectangle
-920000  4998   Circul
-920000  16267   Elipse
-
-930000  4067   Rectangle
-930000  5120   Circul
-930000  16422   Elipse
-
-940000  4160   Rectangle
-940000  5075   Circul
-940000  16442   Elipse
-
-950000  4206   Rectangle
-950000  5134   Circul
-950000  16813   Elipse
-
-960000  4264   Rectangle
-960000  5189   Circul
-960000  16972   Elipse
-
-970000  4393   Rectangle
-970000  5404   Circul
-970000  17322   Elipse
-
-980000  4495   Rectangle
-980000  5381   Circul
-980000  17420   Elipse
-
-990000  4542   Rectangle
-990000  5390   Circul
-990000  17546   Elipse
-
-1000000  5070   Rectangle
-1000000  5418   Circul
-1000000  17905   Elipse
+100000  315   Rectangle
+
+100000  281   Rectangle
+
+100000  313   Rectangle
+
+
+200000  569   Rectangle
+
+200000  523   Rectangle
+
+200000  555   Rectangle
+
+
+300000  961   Rectangle
+
+300000  1105   Rectangle
+
+300000  830   Rectangle
+
+
+400000  1425   Rectangle
+
+400000  1238   Rectangle
+
+400000  1267   Rectangle
+
+
+500000  1730   Rectangle
+
+500000  2065   Rectangle
+
+500000  2093   Rectangle
+
+
+600000  1834   Rectangle
+
+600000  2119   Rectangle
+
+600000  1914   Rectangle
+
+
+700000  2546   Rectangle
+
+700000  2435   Rectangle
+
+700000  2465   Rectangle
+
+
+800000  2905   Rectangle
+
+800000  3061   Rectangle
+
+800000  2358   Rectangle
+
+
+900000  2777   Rectangle
+
+900000  3359   Rectangle
+
+900000  2670   Rectangle
+
+
+1000000  3896   Rectangle
+
+1000000  3406   Rectangle
+
+1000000  3552   Rectangle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

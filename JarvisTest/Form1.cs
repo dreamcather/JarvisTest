@@ -22,21 +22,27 @@ namespace JarvisTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LinkedList<Point> pr = new LinkedList<Point>();
+            LinkedList<Geometry.Mypoint> pr = new LinkedList<Geometry.Mypoint>();
             Geometry gr = new Geometry(pr);
-            for (int i = 1; i <= 100; i++)
+            int kol = 0;
+            for (int i = 1; i <=10;i++)
             {
-                int kol = 10000*i;
-                textBox1.Text = i.ToString();
-                textBox1.Refresh();
-                Stopwatch stopWatch = new Stopwatch();
-                gr.AddRectanglePoint(kol);
-                stopWatch.Start();
-                gr.CallcMin();
-                gr.CallcBorder();
-                stopWatch.Stop();
-                SentReport(stopWatch.ElapsedMilliseconds,kol,"Rectangle");
-                gr.Clear();
+                kol = kol + 1000;
+                for (int j = 0; j < 3; j++)
+                {
+                    textBox1.Text = i.ToString();
+                    textBox1.Refresh();
+                    Stopwatch stopWatch = new Stopwatch();
+                    gr.AddElipse(kol);
+                    stopWatch.Start();
+                    gr.CallcMin();
+                    gr.CallcBorder();
+                    stopWatch.Stop();
+                    SentReport(stopWatch.ElapsedMilliseconds, kol, "Rectangle");
+                    myEnter();
+                    gr.Clear();
+                }
+                /*gr.Clear();
                 gr.AddCirculPoint(kol);
                 stopWatch.Restart();
                 gr.CallcMin();
@@ -49,7 +55,7 @@ namespace JarvisTest
                 gr.CallcMin();
                 gr.CallcBorder();
                 stopWatch.Stop();
-                SentReport(stopWatch.ElapsedMilliseconds, kol, "Elipse");
+                SentReport(stopWatch.ElapsedMilliseconds, kol, "Elipse");*/
                 myEnter();
             }
             System.IO.File.WriteAllLines(@"D:\Компьютерная графика\OpenGl\Программа\JarvisTest\resulttime.txt", mytime);
@@ -70,9 +76,9 @@ namespace JarvisTest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LinkedList<Point> pr = new LinkedList<Point>();
+            LinkedList<Geometry.Mypoint> pr = new LinkedList<Geometry.Mypoint>();
             Geometry gr = new Geometry(pr);
-            gr.AddCirculPoint(200);
+            gr.AddRectanglePoint(100000);
             gr.Save();
             gr.CallcMin();
             gr.CallcBorder();
